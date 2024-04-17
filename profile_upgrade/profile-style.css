@@ -29,8 +29,8 @@
 }
 
 #face {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin-left: 100px;
 }
 
@@ -42,4 +42,36 @@
     font-weight: 500;
     line-height: 50px; /* 130% */
     font-style: bold;
+}
+
+#tech-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#tech-stack {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.stack {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#project-title {
+    font-weight: bold;
+}
+
+#project-box {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#projects-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
 }
