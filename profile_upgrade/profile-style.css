@@ -1,0 +1,45 @@
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items div {
+    display: inline-block;
+    margin-right: 36px;
+}
+
+.nav-items img {
+    display: inline-block;
+    margin-right: 36px;
+}
+
+#logo {
+    display: inline-block;
+    margin-right: 306px;
+}
+
+.nav-items {
+    display: inline-block;
+}
+
+#intro-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#face {
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+}
+
+#intro-box-letter {
+    color: #666;
+    font-family: "DM Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px; /* 130% */
+    font-style: bold;
+}
