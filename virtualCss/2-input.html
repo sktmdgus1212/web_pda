@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./common.css">
+    <style>
+        input {
+            outline: none;
+        }
+
+        input::placeholder {
+            color: blue;
+        }
+
+        input:focus {
+            background-color: rgb(47, 69, 70);
+            border: green solid 2px;
+            color: yellow
+        }
+
+        input:focus::placeholder {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>[input]</div>
+    <input type="text" placeholder="나는 플레이스 홀더">
+</body>
+
+</html>
