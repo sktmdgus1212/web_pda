@@ -1,0 +1,225 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#top-nav {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#top-nav ul {
+    display: flex;
+    gap: 50px;;
+}
+
+#top-nav ul li a {
+    text-decoration: none;
+    color: #42446e;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#top-nav-sns {
+    display: flex;
+    gap: 10px;
+}
+
+#introduction-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#introduction-section img {
+    border-radius: 50%;
+    border: 1px solid blue;
+}
+
+#introduction-section h1 {
+    color: #42446e;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1px;
+}
+
+#introduction-section h1 span{
+    background: linear-gradient(120deg, #13b0f5 -2.06%, #e35ef7 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+#introduction-section img{
+    width: 200px;
+}
+
+#tech-stack-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#tech-stack-section h2 {
+    color: #42446e;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+#tech-stack-section p {
+    color: #666;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+#tech-stack-section ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+#project-section {
+    margin-top: 100px;
+
+}
+
+#project-section h2 {
+    color: #42446e;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+#project-section p {
+    color: #666;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+#project-items {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+#project-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+#project-thumbnail {
+    width: 100%;
+    height: 256px;
+    /* 위쪽 둥글게 둥글게 */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* 배경 이미지 가운데 정렬, 가득차게 */
+    background-image: url("https://source.unsplash.com/random/400×400");
+    background-position: center;
+    background-size: cover;
+}
+
+#project-item h4 {
+    color: #42446e;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px 10px 10px 10px;
+}
+
+#project-item a {
+    text-decoration: none;
+}
+
+#project-item p {
+    color: #666;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+    padding: 0px 10px 10px 10px;
+}
+
+#project-item-tech-stack {
+    color: #42446e;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    padding: 0px 10px 10px 10px;
+}
+
+#project-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0px 10px 10px 10px;
+}
+
+#project-item-link a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration-line: underline;
+}
+
+footer {
+    text-align: center;    
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+#footer-introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#footer-introduction-contact {
+    display: flex;
+    gap:50px;
+}
+
+#footer-introduction-sns {
+    display: flex;
+    gap: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+footer p span {
+    background: linear-gradient(0deg, #13b0f5 -2.06%, #e70faa 100%);
+    background-clip: text;
+    color: transparent; /* 글자 색을 투명하게 */
+}
