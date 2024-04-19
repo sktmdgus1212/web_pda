@@ -189,6 +189,7 @@ body {
     text-align: center;
     box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+    background-color: white;
 }
 
 #project-thumbnail {
