@@ -13,7 +13,7 @@ body {
     flex-wrap: wrap;
 }
 
-#top-nav ul {
+.top-nav-web {
     display: flex;
     gap: 50px;;
 }
@@ -28,6 +28,27 @@ body {
 #top-nav-sns {
     display: flex;
     gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .top-nav-mobile {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .top-nav-web {
+        display: none;
+    }
+    
+    .top-nav-mobile {
+        display: flex;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    #top-nav ul li a {
+        font-size: 14px;
+    }
 }
 
 #introduction-section {
@@ -61,6 +82,22 @@ body {
     width: 200px;
 }
 
+@media (max-width: 768px) {
+    #introduction-section {
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    #introduction-section h1 {
+        color: #42446e;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -1px;
+    }
+}
+
 #tech-stack-section {
     display: flex;
     justify-content: center;
@@ -90,6 +127,28 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 70px;
+}
+
+@media (max-width: 768px) {
+    #tech-stack-section {
+        margin-top: 70px;
+    }
+
+    #tech-stack-section h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    #tech-stack-section p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #tech-stack-section ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1px;
+    }
 }
 
 #project-section {
@@ -186,6 +245,30 @@ body {
     text-decoration-line: underline;
 }
 
+@media (max-width: 768px) {
+    #project-section h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    #project-section p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    #project-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding-bottom: 100px;
+    }
+
+    #project-item {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 footer {
     text-align: center;    
 }
@@ -222,4 +305,27 @@ footer p span {
     background: linear-gradient(0deg, #13b0f5 -2.06%, #e70faa 100%);
     background-clip: text;
     color: transparent; /* 글자 색을 투명하게 */
+}
+
+.p-br-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    footer p {
+        padding-bottom: 10px;
+    }
+
+    footer p.phone {
+        display: none;
+    }
+    
+    #footer-introduction-contact {
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .p-br-mobile {
+        display: inline;
+    }
 }

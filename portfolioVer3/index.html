@@ -5,13 +5,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css" media="(max-width: 768px)">
 </head>
 
 <body>
     <nav id="top-nav">
         <a href="#"><img src="image/logo.svg"></a>
-        <ul>
+        <ul class="top-nav-web">
             <li><a href="#">Home</a></li>   
             <li><a href="#">About</a></li>
             <li><a href="#">Tech Stack</a></li>
@@ -23,6 +22,13 @@
             <a href="#"><img src="image/twitter.svg"></a>
                 <a href="#"><img src="image/linkedin.svg"></a>
         </div>
+        <ul class="top-nav-mobile">
+            <li><a href="#">Home</a></li>   
+            <li><a href="#">About</a></li>
+            <li><a href="#">Tech Stack</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
 
     <header id="introduction-section">
@@ -132,8 +138,8 @@
         <div id="footer-introduction">
             <a href="#"><img src="image/logo.svg"></a>
             <div id="footer-introduction-contact">
-                <p>+91 12345 09876</p>
-                <p>info@example.com</p>
+                <p class="phone">+91 12345 09876</p>
+                <p class="email">info@example.com</p>
                 <div id="footer-introduction-sns">
                     <a href="#"><img src="image/github.svg"></a>
                     <a href="#"><img src="image/twitter.svg"></a>
@@ -142,7 +148,7 @@
             </div>
         </div>
         <hr>
-        <p>Designed and built by Pavan MG with <span>Love</span> & <span>coffee</span></p>
+        <p>Designed and built <span class="p-br-mobile"><br></span>by Pavan MG with <span>Love</span> & <span>coffee</span></p>
     </footer>
 </body>
 
