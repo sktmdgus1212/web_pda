@@ -23,7 +23,7 @@ jobs:
         uses: jakejarvis/s3-sync-action@master
         with:
           args: --delete
-          
+      
       #- name: Deploy To s3    
       #  env:
       #    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -33,3 +33,9 @@ jobs:
       #      --recursive \
       #      --region ap-northeast-2 \
       #      ./portfolioVer3/ s3://pda-portfolio-nig
+
+      - name: Cloudfront invalidation
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.AWS_DISTRIBUTION_ID }} \
+            --paths "/*"
