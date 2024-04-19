@@ -2,6 +2,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    background: rgb(229,233,241);
+    background: linear-gradient(120deg, rgba(229,233,241,1) 0%, rgba(252,253,255,1) 52%, rgba(210,238,240,1) 100%);
 }
 
 #top-nav {
